@@ -1,0 +1,86 @@
+:root {
+	--violet: #830ad1;
+	--violet2: #810ad1ea;
+	--black: #111111;
+	--white: #ffffff;
+}
+
+.container {
+	background-color: var(--white);
+	font-family: sans-serif;
+	color: var(--black);
+}
+
+.wrapper {
+	padding: 0px 3vw;
+}
+
+.nubank-logo {
+	fill: var(--violet);
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: max(10vh, 60px);
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.nav-logo {
+	padding-right: 1.5rem;
+}
+
+.nav-items {
+	display: flex;
+	height: 100%;
+	width: fit-content;
+}
+
+.nav-items li {
+	display: flex;
+	padding-right: 1.5rem;
+}
+
+.nav-items li a {
+	margin: auto;
+}
+
+.nav-buttons {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+.nav-button {
+	margin-left: 1.5rem;
+}
+
+.primary-button {
+	color: var(--violet);
+}
+
+.primary-button:hover {
+	text-decoration: underline;
+}
+
+.secundary-button {
+	padding: 0.75rem 1.5rem;
+	color: var(--white);
+	background-color: var(--violet);
+	border-radius: 2rem;
+}
+
+.secundary-button:hover {
+	background-color: var(--violet2);
+	transition: ease 0.75s;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	border: blue 2px solid;
+}
