@@ -43,9 +43,19 @@ nav {
 	align-items: center;
 }
 
+.nav-icon {
+	width: 3rem;
+	text-align: center;
+}
+
+.nav-icon path {
+	width: 3rem;
+	text-align: center;
+	fill: var(--white);
+}
+
 .nav-logo {
 	margin-right: 1.5rem;
-	fill: var(--white);
 }
 
 .nav-logo .nubank-logo {
@@ -54,6 +64,15 @@ nav {
 	/* logo size */
 	height: 3rem;
 	width: 3rem;
+}
+
+.nav-menu {
+	margin-left: 1.5rem;
+}
+
+.nav-menu .bars-icon {
+	height: 2rem;
+	width: 2rem;
 }
 
 .nav-list {
@@ -115,11 +134,6 @@ nav {
 .signup-button:hover {
 	background-color: var(--violet2);
 	transition: ease 0.75s;
-}
-
-.nav-menu .bars-icon {
-	height: 2rem;
-	width: 2rem;
 }
 
 section {
