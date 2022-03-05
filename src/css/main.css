@@ -3,6 +3,7 @@
 	--violet2: #810ad1ea;
 	--black: #111111;
 	--white: #ffffff;
+	--wrapperPadding: 3vw;
 }
 
 .container {
@@ -12,7 +13,7 @@
 }
 
 .wrapper {
-	padding: 0px 3vw;
+	padding: 0px var(--wrapperPadding);
 }
 
 .nubank-logo {
@@ -22,15 +23,14 @@
 nav {
 	position: fixed;
 	width: 100%;
-	height: max(10vh, 60px);
+	height: max(9vh, 60px);
 	background-color: var(--white);
 	display: flex;
 	align-items: center;
-	justify-content: left;
 }
 
 .nav-logo {
-	padding-right: 1.5rem;
+	margin-right: 1.5rem;
 }
 
 .nav-items {
@@ -66,7 +66,7 @@ nav {
 	text-decoration: underline;
 }
 
-.secundary-button {
+.signup-button {
 	padding: 0.75rem 1.5rem;
 	color: var(--white);
 	background-color: var(--violet);
@@ -82,5 +82,41 @@ section {
 	display: flex;
 	align-items: center;
 	height: 100vh;
-	border: blue 2px solid;
+}
+
+.img-section {
+	color: var(--white);
+}
+
+.section1 {
+	background-image: url(../img/image1-1280-colored.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.section2 {
+	background-image: url(../img/image2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.section3 {
+	background-image: url(../img/image3-1280-colored.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.section4 {
+	background-image: url(../img/image4-1280-colored.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+footer {
+	background-color: var(--black);
+	color: var(--white);
 }
