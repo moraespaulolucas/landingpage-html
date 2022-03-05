@@ -45,7 +45,6 @@ nav {
 
 .nav-icon {
 	width: 3rem;
-	text-align: center;
 }
 
 .nav-icon path {
@@ -68,6 +67,7 @@ nav {
 
 .nav-menu {
 	margin-left: 1.5rem;
+	text-align: end;
 }
 
 .nav-menu .bars-icon {
