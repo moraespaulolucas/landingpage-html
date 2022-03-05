@@ -16,10 +16,6 @@
 	padding: 0px var(--wrapperPadding);
 }
 
-.nubank-logo {
-	fill: var(--violet);
-}
-
 /* nav {
 	position: fixed;
 	width: 100%;
@@ -29,27 +25,35 @@
 	align-items: center;
 } */
 
+.nubank-logo {
+	background: url(../svg/nubank-logo-white.svg) center no-repeat;
+}
+
+.bars-icon {
+	background: url(../svg/fa-bars.svg) center no-repeat;
+}
+
 nav {
 	/* position and size */
 	position: fixed;
 	width: 100%;
 	height: max(9vh, 60px);
-
+	/* display */
 	display: flex;
 	align-items: center;
-}
-
-.nubank-logo {
-	/* size */
-	height: 3rem;
-	width: 3rem;
-	/* svg */
-	background: url(../img/nubank-logo-white.svg) center no-repeat;
 }
 
 .nav-logo {
 	margin-right: 1.5rem;
 	fill: var(--white);
+}
+
+.nav-logo .nubank-logo {
+	margin-right: 1.5rem;
+	fill: var(--white);
+	/* logo size */
+	height: 3rem;
+	width: 3rem;
 }
 
 .nav-list {
@@ -111,6 +115,11 @@ nav {
 .signup-button:hover {
 	background-color: var(--violet2);
 	transition: ease 0.75s;
+}
+
+.nav-menu .bars-icon {
+	height: 2rem;
+	width: 2rem;
 }
 
 section {
