@@ -1,6 +1,7 @@
 :root {
 	--violet: #830ad1;
-	--violet2: #810ad1ea;
+	--violet2: #930ad1;
+	--violet3: rgba(129, 10, 209, 0.2);
 	--black: #111111;
 	--white: #ffffff;
 	--wrapperPadding: 3vw;
@@ -48,8 +49,6 @@ nav {
 }
 
 .nav-icon path {
-	width: 3rem;
-	text-align: center;
 	fill: var(--white);
 }
 
@@ -66,13 +65,22 @@ nav {
 }
 
 .nav-menu {
-	margin-left: 1.5rem;
-	text-align: end;
+	display: flex;
+	width: 3rem;
+	height: 3rem;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .nav-menu .bars-icon {
 	height: 2rem;
 	width: 2rem;
+}
+
+.nav-menu:hover {
+	background-color: var(--violet3);
+	transition: all ease 0.75s;
 }
 
 .nav-list {
@@ -101,7 +109,7 @@ nav {
 }
 
 .primary-button {
-	color: var(--violet);
+	color: var(--violet3);
 }
 
 .primary-button:hover {
@@ -133,7 +141,7 @@ nav {
 
 .signup-button:hover {
 	background-color: var(--violet2);
-	transition: ease 0.75s;
+	transition: all ease 0.75s;
 }
 
 section {
