@@ -1,6 +1,6 @@
 :root {
 	--violet: #830ad1;
-	--violet2: #930ad1;
+	--violet2: #a414e7;
 	--violet3: rgba(129, 10, 209, 0.2);
 	--black: #111111;
 	--white: #ffffff;
@@ -40,28 +40,26 @@ nav {
 	width: 100%;
 	height: max(9vh, 60px);
 	/* display */
+	background-color: #ffffff;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .nav-icon {
 	width: 3rem;
 }
 
-.nav-icon path {
-	fill: var(--white);
-}
-
 .nav-logo {
 	margin-right: 1.5rem;
 }
 
-.nav-logo .nubank-logo {
-	margin-right: 1.5rem;
-	fill: var(--white);
-	/* logo size */
-	height: 3rem;
-	width: 3rem;
+.nav-logo path {
+	fill: var(--violet);
+}
+
+.nav-items {
+	display: none;
 }
 
 .nav-menu {
